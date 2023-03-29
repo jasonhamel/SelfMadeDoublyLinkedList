@@ -144,4 +144,12 @@ public class NewDoublyLinkedList <T>{
         toInsert.setNext(traversalNode);
         length++;
     }
+
+    public void print() {
+        Node<T> currentNode = head;
+        while (currentNode != null) {
+            System.out.println(currentNode.getValue());
+            currentNode = currentNode.getNext();
+        }
+    }
 }
